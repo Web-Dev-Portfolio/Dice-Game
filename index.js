@@ -42,3 +42,16 @@ switch(randomNumber2)
   document.querySelector("img.img2").setAttribute("src", "images/dice6.png");
   break;
 }
+
+if (randomNumber1 > randomNumber2)
+{
+  document.querySelector("h1#status").textContent = "🚩 Player 1 Wins!";
+}
+else if (randomNumber2 > randomNumber1)
+{
+  document.querySelector("h1#status").textContent = "Player 2 Wins! 🚩";
+}
+else if (randomNumber1 === randomNumber2)
+{
+  document.querySelector("h1#status").textContent = "It's a Draw!";
+}
